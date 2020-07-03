@@ -41,9 +41,9 @@ public class ProduitMockService implements IProductService {
 	}
 
 	@Override
-	public void deleteProduct(String ref) {
+	public void deleteProduct(Long id) {
 		Product product = new Product();
-		product.setRef(ref);
+		product.setId(id);
 		products.remove(product);
 	}
 
